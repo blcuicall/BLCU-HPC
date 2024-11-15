@@ -56,7 +56,8 @@ du -sh ~/.cache
 
 2.移动大文件到data盘
 
-以移动conda环境为例
+以移动conda环境为例。在每个账号建立之初，系统会自动地创建软连接 workspace 指向 `/data/private/username`。因此，可以将 `.conda` 和 `.cache` 文件夹移动到 `workspace` 目录下，实质上即为移动到 `/data/private/username` 目录下。
+
 ```shell
 mv .conda ~/workspace/
 mv .cache ~/workspace/
